@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="water_river">
+    <static>true</static>
+    <link name="base">
+      <visual name="visual">
+        <transparency>0.1</transparency>
+        <geometry>
+          <box><size>50 50 10</size></box>
+        </geometry>
+        <material>
+          <ambient>0.30 0.50 0.40</ambient>
+          <diffuse>0.39 0.71 0.59</diffuse>
+          <specular>0.30 0.30 0.30</specular>           
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="water_beach">
+    <static>true</static>
+    <link name="base">
+      <visual name="visual">
+        <transparency>0.1</transparency>
+        <geometry>
+          <box><size>50 50 13</size></box>
+        </geometry>
+        <material>
+          <ambient>0.20 0.50 0.60</ambient>   
+          <diffuse>0.25 0.75 0.85</diffuse>   
+          <specular>0.40 0.45 0.50</specular>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
