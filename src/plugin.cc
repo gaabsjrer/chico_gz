@@ -2,7 +2,7 @@
 #include <gazebo/physics/physics.hh>
 #include <gazebo/common/common.hh>
 #include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/float32_multi_array.hpp>
+#include <std_msgs/msg/float64_multi_array.hpp>
 
 namespace gazebo
 {
@@ -10,13 +10,13 @@ namespace gazebo
   {
   private:
     rclcpp::Node::SharedPtr node;
-    rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr publisher;
+    rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher;
     event::ConnectionPtr updateConnection;
    
     physics::WorldPtr world;
-    double valor1 = 1.0;
-    double valor2 = 2.0;
-    double valor3 = 3.0;
+    double valor1 = 0.0;
+    double valor2 = 0.0;
+    double valor3 = 0.0;
 
   public:
     Plugin() : WorldPlugin() {}
@@ -31,7 +31,7 @@ namespace gazebo
       node = rclcpp::Node::make_shared("plugin");
 
       // Criar o publisher
-      publisher = node->create_publisher<std_msgs::msg::Float32MultiArray>("/valores", 10);
+      publisher = node->create_publisher<std_msgs::msg::Float64MultiArray>("/valores", 10);
 
       // Lê os valores do SDF
       if (_sdf->HasElement("valor1"))
@@ -51,7 +51,7 @@ namespace gazebo
     void OnUpdate()
     {
       // Publica os valores no tópico ROS2
-      std_msgs::msg::Float32MultiArray msg;
+      std_msgs::msg::Float64MultiArray msg;
       msg.data = {valor1, valor2, valor3};
 
       publisher->publish(msg);
