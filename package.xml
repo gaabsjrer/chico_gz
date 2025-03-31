@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>chico_gz</name>
+  <name>laser_rahcm_simulation</name>
   <version>0.0.1</version>
-  <description>Chico Mendes Evironment</description>
+  <description>Chico Mendes Robot Simulation</description>
   <maintainer email="gabriellucenasajr@gmail.com">gabriel</maintainer>
   <license>Apache 2.0</license>
 

@@ -6,10 +6,10 @@ from launch.conditions import IfCondition
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    gazebo_model_path = '/home/gabriel/chico_ws/src/chico_gz/models'
+    gazebo_model_path = '/home/gabriel/chico_ws/src/laser_rahcm_simulation/models'
     
     world_file = os.path.join(
-        get_package_share_directory('chico_gz'), 'worlds', 'river_1.sdf'
+        get_package_share_directory('laser_rahcm_simulation'), 'worlds', 'beach.sdf'
     )
 
     return LaunchDescription([

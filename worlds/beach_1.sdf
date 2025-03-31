@@ -1,4 +1,3 @@
-<?xml version='1.0'?>
 <sdf version='1.7'>
   <world name='beach'>
     <physics type='ode'>
@@ -17,9 +16,6 @@
       <valor2>0.0</valor2>
       <valor3>0.0</valor3>
     </plugin>
-    <!-- <gui>
-      <plugin name="plugin_control" filename="libplugin_control.so"/>
-    </gui> -->
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
@@ -309,10 +305,10 @@
       <pose>-24.1702 -10.8756 8.6218 0 -0 0</pose>
     </model>
     <state world_name='beach'>
-      <sim_time>830 517000000</sim_time>
-      <real_time>869 8383788</real_time>
-      <wall_time>1742963246 975167544</wall_time>
-      <iterations>830517</iterations>
+      <sim_time>895 992000000</sim_time>
+      <real_time>65 849095322</real_time>
+      <wall_time>1743091289 750609759</wall_time>
+      <iterations>65475</iterations>
       <model name='heightmap_beach'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -364,10 +360,10 @@
         </link>
       </model>
       <model name='water_beach'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 2.3409 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='base'>
-          <pose>0 0 0 0 -0 0</pose>
+          <pose>0 0 2.3409 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -379,7 +375,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>8.59624 -7.94736 21.6105 -0 0.352995 -3.00323</pose>
+        <pose>2.25431 -40.7169 16.3721 0 0.252995 2.10396</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
