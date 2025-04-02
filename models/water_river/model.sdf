@@ -6,7 +6,7 @@
       <visual name="visual">
         <transparency>0.1</transparency>
         <geometry>
-          <box><size>50 50 10</size></box>
+          <box><size>50 50 3</size></box>
         </geometry>
         <material>
           <ambient>0.30 0.50 0.40</ambient>

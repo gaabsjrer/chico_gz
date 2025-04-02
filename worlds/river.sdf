@@ -10,7 +10,16 @@
       </dart>
     </physics>
 
-   <plugin name="plugin" filename="libplugin.so">
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-11 -10 2 0 0.05 2.3</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+
+    <plugin name="plugin" filename="libplugin.so">
       <valor1>0.0</valor1>
       <valor2>0.0</valor2>
       <valor3>0.0</valor3>
@@ -25,12 +34,11 @@
     </include>
 
     <include>
-      <pose>0 0 0 0 0 0</pose>
       <uri>model://heightmap_river</uri>
     </include>
 
     <include>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 -1.5 0 0 0</pose>
       <uri>model://water_river</uri>
     </include>
 

@@ -7,8 +7,8 @@
           <geometry>
             <heightmap>
               <uri>model://heightmap_river/materials/textures/river.png</uri>
-              <size>50 50 10</size>
-              <pos>0 0 0</pos>
+              <size>50 50 5</size>
+              <pos>0 0 -3</pos>
             </heightmap>
           </geometry>
         </collision>
@@ -40,8 +40,8 @@
                 <fade_dist>5</fade_dist>
               </blend>
               <uri>model://heightmap_river/materials/textures/river.png</uri>
-              <size>50 50 10</size>
-              <pos>0 0 0</pos>
+              <size>50 50 5</size>
+              <pos>0 0 -3</pos>
             </heightmap>
           </geometry>
         </visual>

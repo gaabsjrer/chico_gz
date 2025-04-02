@@ -9,7 +9,7 @@ def generate_launch_description():
     gazebo_model_path = '/home/gabriel/chico_ws/src/laser_rahcm_simulation/models'
     
     world_file = os.path.join(
-        get_package_share_directory('laser_rahcm_simulation'), 'worlds', 'beach.sdf'
+        get_package_share_directory('laser_rahcm_simulation'), 'worlds', 'river.sdf'
     )
 
     return LaunchDescription([
