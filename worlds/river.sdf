@@ -18,14 +18,13 @@
       </camera>
     </gui>
 
-
-    <plugin name="plugin" filename="libplugin.so">
+    <!-- <plugin name="plugin" filename="libplugin.so">
       <valor1>0.0</valor1>
       <valor2>0.0</valor2>
       <valor3>0.0</valor3>
     </plugin> 
 
-    <!-- <gui>
+     <gui>
       <plugin name="plugin_control" filename="plugin_control.so"/>
     </gui> -->
 

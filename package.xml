@@ -12,15 +12,16 @@
   <depend>rclcpp</depend> 
   <depend>std_msgs</depend>
 
-  <depend>gazebo_ros</depend>
-  <depend>gazebo_dev</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>ament_cmake</depend>
+  <build_depend>eigen3_cmake_module</build_depend>
+  <exec_depend>eigen3_cmake_module</exec_depend>
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <exec_depend>gazebo_ros</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
+    <gazebo_ros plugin_path="${prefix}/lib" />
   </export>
 </package>
