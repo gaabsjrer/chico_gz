@@ -24,7 +24,7 @@
 #include <gazebo/common/common.hh>
 #include <gazebo/rendering/rendering.hh>
 
-#include "../include/Gazebo.hh"
+#include "laser_rahcm_simulation/Gazebo.hh"
 
 namespace gazebo
 {

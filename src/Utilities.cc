@@ -27,7 +27,7 @@
 
 #include <sdf/sdf.hh>
 
-#include "../include/Utilities.hh"
+#include "laser_rahcm_simulation/Utilities.hh"
 
 namespace asv
 {

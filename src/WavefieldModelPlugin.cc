@@ -24,10 +24,10 @@
 #include <gazebo/common/common.hh>
 #include <gazebo/physics/physics.hh>
 
-#include "../include/WavefieldModelPlugin.hh"
-#include "../include/Wavefield.hh"
-#include "../include/WavefieldEntity.hh"
-#include "../include/Utilities.hh"
+#include "laser_rahcm_simulation/WavefieldModelPlugin.hh"
+#include "laser_rahcm_simulation/Wavefield.hh"
+#include "laser_rahcm_simulation/WavefieldEntity.hh"
+#include "laser_rahcm_simulation/Utilities.hh"
 
 using namespace gazebo;
 

@@ -39,10 +39,10 @@
 #include "gazebo/rendering/Camera.hh"
 #include "gazebo/rendering/UserCamera.hh"
 
-#include "../include/WavefieldVisualPlugin.hh"
-#include "../include/Gazebo.hh"
-#include "../include/Wavefield.hh"
-#include "../include/Utilities.hh"
+#include "laser_rahcm_simulation/WavefieldVisualPlugin.hh"
+#include "laser_rahcm_simulation/Gazebo.hh"
+#include "laser_rahcm_simulation/Wavefield.hh"
+#include "laser_rahcm_simulation/Utilities.hh"
 
 using namespace gazebo;
 

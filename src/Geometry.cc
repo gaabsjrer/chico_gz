@@ -21,7 +21,7 @@
 #include <ignition/math/Vector2.hh>
 #include <ignition/math/Vector3.hh>
 
-#include "../include/Geometry.hh"
+#include "laser_rahcm_simulation/Geometry.hh"
 
 /* The version of ignition math in Ubuntu Xenial is 2.2.3 and lacks of
  * some features added after that version in the 2.x series */

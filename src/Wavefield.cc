@@ -30,10 +30,10 @@
 #include <ignition/math/Vector2.hh>
 #include <ignition/math/Vector3.hh>
 
-#include "../include/Geometry.hh"
-#include "../include/Physics.hh"
-#include "../include/Utilities.hh"
-#include "../include/Wavefield.hh"
+#include "laser_rahcm_simulation/Geometry.hh"
+#include "laser_rahcm_simulation/Physics.hh"
+#include "laser_rahcm_simulation/Utilities.hh"
+#include "laser_rahcm_simulation/Wavefield.hh"
 
 namespace asv
 {
