@@ -2,8 +2,43 @@
 <sdf version="1.6">
   <model name="water_beach">
     <static>true</static>
+
+    <plugin name="wavefield" filename="libWavefieldModelPlugin.so">
+      <static>false</static>
+      <update_rate>30</update_rate>
+      <size>1000 1000</size>
+      <cell_count>50 50</cell_count>
+      <wave>
+        <number>3</number>
+        <scale>1.5</scale>
+        <angle>0.4</angle>
+        <steepness>1.0</steepness>
+        <amplitude>0.4</amplitude>
+        <period>8.0</period>
+        <direction>1 1</direction>
+      </wave>
+     </plugin>
+
     <link name="base">
       <visual name="visual">
+
+        <plugin name="wavefield_visual" filename="libWavefieldVisualPlugin.so">
+          <enableRtt>true</enableRtt>
+          <rttNoise>0.1</rttNoise>
+          <refractOpacity>0.1</refractOpacity>
+          <reflectOpacity>0.5</reflectOpacity>
+          <static>false</static>
+          <wave>
+            <number>3</number>
+            <scale>1.5</scale>
+            <angle>0.4</angle>
+            <steepness>1.0</steepness>
+            <amplitude>0.4</amplitude>
+            <period>8.0</period>
+            <direction>1 1</direction>
+          </wave>
+        </plugin>
+
         <transparency>0.1</transparency>
         <geometry>
           <box><size>50 50 3</size></box>

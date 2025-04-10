@@ -9,7 +9,7 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     pkg_share = FindPackageShare(package='laser_rahcm_simulation').find('laser_rahcm_simulation')
     worlds_dir = os.path.join(pkg_share, 'worlds')
-    default_world = 'river.sdf'
+    default_world = 'river.world'
     
     world_gazebo_arg = DeclareLaunchArgument(
         name="world", 

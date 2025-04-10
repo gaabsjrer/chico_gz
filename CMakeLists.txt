@@ -82,6 +82,13 @@ add_dependencies(wavegauge_plugin WavefieldModelPlugin)
 target_compile_options(wavegauge_plugin PRIVATE "-Wno-unknown-pragmas")
 list(APPEND WAVE_GAZEBO_PLUGINS_LIST wavegauge_plugin)
 
+install(DIRECTORY
+   launch
+   worlds
+   models
+   DESTINATION share/${PROJECT_NAME}
+ )
+ 
 install(TARGETS ${WAVE_GAZEBO_LIBRARIES_LIST} ${WAVE_GAZEBO_PLUGINS_LIST}
   EXPORT export_${PROJECT_NAME}
   ARCHIVE DESTINATION lib
@@ -105,6 +112,13 @@ install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/
   FILES_MATCHING PATTERN "*.pb.*"
   PATTERN "*~" EXCLUDE
 )
+
+if(build_testing)
+  find_package(ament_lint_auto required)
+  set(ament_cmake_copyright_found true)
+  set(ament_cmake_cpplint_found true)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_export_include_directories(include)
 ament_export_libraries(Hydrodynamics WavefieldModelPlugin WavefieldVisualPlugin wavegauge_plugin)
